@@ -17,146 +17,122 @@ function util_plus_minus() {        //a javascript function that uses the Getele
 }
 
 
+
 //Developed for Function Challenge - Step 75 
 // This is an addition function, followed by a call to add two numbers.
 
-function myFunction(p1, p2) {
-  return p1 + p2;
+function myFunction() {
+  var x = 4;
+  var y = 5;
+  let z = x + y;
+  document.getElementById("math").innerHTML = x +  " + " + y + " equals " + z;
 }
 
-//invoke addition function and post content on the index.html under the id titled math
-let result = myFunction(4, 3);
-document.getElementById("math").innerHTML = "4 + 3 equals " + result;
 
 
 
 // This is a multiplication function, followed by a call to multiply two numbers
-function myFunctionmult(p1, p2) {
- return p1 * p2;
+function myFunctionmult() {
+  var x = 10;
+  var y = 5;
+  let z = x * y;
+  document.getElementById("math2").innerHTML = x + "  times " + y +  " equals " + z;
 }
 //invoke multiplication function and post content on the index.html under the id titled math2
-let result2 = myFunctionmult(4, 3);
-document.getElementById("math2").innerHTML = "4 times 3 equals " + result2;
+
+
 
 
 
 // This is a subtraction function, followed by a call to subtract two numbers
-function myFunctionsubtract(p1, p2) {
-  return p1 - p2;
+function myFunctionsubtract() {
+ var x = 7;
+ var y = 3;
+ let   z = x - y;
+  document.getElementById("mathsubtract").innerHTML =  x + " minus " +  y + " is " + z;
 }
-//invoke subtraction function and post content on the index.html under the id titled mathsubtract
-let result3 = myFunctionsubtract(4, 3);
-document.getElementById("mathsubtract").innerHTML = "4 - 3 equals " +result3;
-
-
-
-
 
 
 // This is a division function, followed by a call to divide numbers
-function myFunctiondivide(p1, p2) {
-  return p1 / p2;
+function myFunctiondivide() {
+  var x = 10/5;
+  document.getElementById("mathdivide").innerHTML = "10 Divided by 5 equals " + x;
+
 }
-//invoke multiplication function and post content on the index.html under the id titled mathdivide
-//divided, sky the winds blows high, divided sky........Phish
-let result4 = myFunctiondivide(10, 5);
-document.getElementById("mathdivide").innerHTML = "10 Divided by 5 equals " + result4;
 
 
 
-// This is a multi-operation function, followed by a call to return the result
-function more_Math() {
-  return (1 + 2) * 10 / 2 - 5
+
+// This is a multi-operation function
+function   more_Math(){
+var v = 1;
+  var w = 2;
+  var x = 10; 
+  var y = 5;
+  let z = (v + w) * x / w - y;
+  document.getElementById("Math7").innerHTML =  v + " plus " +  w + " times " + x + " divided by " + w + " minus " + y + " is equal to " + z; 
 }
- //invoke multi operations on simple match function and post content on the index.html under the id titled math7
- let simple_Math = more_Math();
-  document.getElementById("Math7").innerHTML = "(1 + 2) times 10 divided 2 - 5 equals " + simple_Math; 
+ 
 
 
 //Modulus - returns the remainder of a division problem.
 function modulus_Operator() {
-  return 25 % 6;
-}
-//invoke modulus function and post content on the index.html under the id titled math7
-  var mod = 25 % 6;
-  document.getElementById("Math8").innerHTML = "When you divide 25 by 6 you receive a remainder of: " + mod;
+  var x = 25;
+  var y = 6;
+  let z = x % y;
+  document.getElementById("Math8").innerHTML = "When you divide " + x + " by " +  y + " you receive a remainder of: " + z;
 
+
+}
 
 
 //Modulus - Accepts a base and exponent to mulitply and calculate the value.
 
-function negation_operation(unaryvalue) {
-  return -unaryvalue;
+function negation_operation() {
+  var x = 10
+  document.getElementById("Math9").innerHTML = "The negation of: " + x +  " is " +  -x;
 }
-
-//invoke negation  function and post content on the index.html under the id titled math9
-var unaryvalue = 10;
-document.getElementById("Math9").innerHTML = "The negation of: " + unaryvalue +  " is " +  -unaryvalue;
-
-
 
 
 //Increment Operator will increment by one unit
 
-function incremeter(nmbritem) {
-   
-  return ++nmbritem;
-  
+function incremeter() {
+  var x = 8;
+  let z = ++x;
+  document.getElementById("Math10").innerHTML = "A one notch increment of " + --x + " is  " + z;
 }
-
-//invoke increment function and post content on the index.html under the id titled math10
-
-var x = 5.25;
-y= incremeter(x);
-document.getElementById("Math10").innerHTML = "A one notch increment of " + x + " is  " + y;
 
 
 //decrement Operator will decrease by one unit
-function decremeter(nmbritem){
+function decremeter(){
+  var x = 8;
+  let z = --x;
  
-  return --nmbritem;
-  
+ document.getElementById("Math11").innerHTML = "A one notch decrement   of " + ++x + " is "  + z;
+
 }
-
-//invoke decrement function and post content on the index.html under the id titled math11
-
-var z = 5.25;
-w = decremeter(z);
-document.getElementById("Math11").innerHTML = "A one notch decrement is  of " + z + " is "  + w;
-
 
 
 // Generates a random number
 
-function Randompick(value) {
+function Randompick() {
    
-  return Math.random() * value;
-  
+  var y = 5;
+  let z =  Math.random()*y;
+  document.getElementById("Math12").innerHTML = "A random number between  1 and " + y + " is " + z;
+
 }
 
-//invoke random number function and post content on the index.html under the id titled math12
 
-var x = 5;
-y = Randompick(x);
-document.getElementById("Math12").innerHTML = "A random number between  1 and " + x + " is " + y;
-
-
-
-
-//'I have been waiting for you, Mr. Powers'...Dr. Evil
 //Takes a base and exposent and multiplies out the value
 
+function powers() {
+  var x = 5;
+  var y = 3;
+  let z =  Math.pow(x,y);
+  document.getElementById("Math13").innerHTML = "<BR>" +  x + "  to the  " + y + " power is "  + z;
 
-function powers(x,y) {
-   
-  return Math.pow(x,y);
-  
 }
 
 
-//Invokes the powers function and places value on the index.html page under the Match 13 id
 
-var num1 = 5;
-var num2 = 3
-y = powers(num1,num2);
-document.getElementById("Math13").innerHTML = "<BR>" +  num1 + "  to the  " + num2 + " power is "  + y;
