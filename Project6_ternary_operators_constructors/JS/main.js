@@ -2,13 +2,25 @@
 
 //Uses Ternary or conditional  A  ?  B or C
 //Over 100K is not eligible for a refund
+///https://www.educba.com/javascript-nested-functions/
+
 
 function tax_rebate_Function() {
     var income, Can_rebate;
     income = document.getElementById("income").value;
+   document.getElementById("rebate").innerHTML = assess_income()
+   function assess_income() {
     Can_rebate = (income > 100000) ? "You are not eligible for a refund " : "You are eligible for a refund ";
-    document.getElementById("rebate").innerHTML = Can_rebate + ".";
+     //  document.getElementById("rebate").innerHTML = Can_rebate + ".";
+       return Can_rebate + "."; 
+   }  
+
+
+
 }
+
+
+
 
 // Constructor function for Employee objects- Uses "this." to create a place holder so the values can be assigned later.
 //new Keyword is then used to create an object, the team leader, who is actually the Wolfman's Brother.
