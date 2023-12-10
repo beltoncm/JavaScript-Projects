@@ -1,0 +1,27 @@
+/* Establish a default format. */
+
+html {
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #43464B;
+    background-color:#ADD8E6;
+    text-align: center;
+    
+    }
+  
+  
+  /* format the De-facto header */
+    .divider {
+      font-size: 48px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight:bold;
+      color: #ADD8E6;
+      background-color: black;
+      text-align: center;
+    }
+  /* Provide larger font and a white color for the active countdown digits. */
+  
+    #timer {
+      font-size: 225px;
+      color: white;
+    }
