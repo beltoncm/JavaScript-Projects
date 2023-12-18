@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<title>The One Page Website</title>
+			<meta charset="utf-8"> 
+			<link rel="stylesheet" href="./css/one_page_website.css">
+			<script src="JS/one_page_website.js" defer></script>
+		</head>
+<body>
+
+	<div id ="home">
+	<div>
+		<div id="intro">
+			<span><h1>DEDICATED NFL FANS</h1></span>
+			<span>"Where news, images, and discussions will picque your interest in a topic we all love - Football!</span>
+		</div>
+	</div>
+</div>			
+	
+	<!--Home Page Section END-->
+
+	<!--NAV -->
+<nav class="navigate">
+<div>
+	<div>
+	<ul>
+		<a href="#home" id = "link"><li>Home</li></a>
+		<a href="#gallery" id = "link"><li>Gallery</li></a>
+		<a href="#lottery" id = "link"><li>Lottery</li></a>
+		<a href="#videos" id = "link"><li>Videos</li></a>
+	</u1>
+</div>
+</div>
+</nav>
+<!--END NAV -->	
+	
+	
+	<!--Pictures Page Section Start-->
+<section>
+	<div id="gallery">
+			<h1>Gallery</h1>
+			<div>
+
+<!-- Photo-Container 1 -->
+					<div>
+						<div>
+							<img class= "img-1st-set" src = "./images/thumb/download1_wide.jpg" alt="Image 1 Link is Broken or Missing">
+							<div>
+								<!--<h3>Click to Enlarge</h3>-->
+								<p>Patrick Mahomes</p>
+							</div>
+						</div>
+					</div>
+<!--End Photo Container-->	
+<!-- Photo-Container 1 -->
+					<div>
+						<div>
+							<img class= "img-1st-set"  src = "./images/thumb/download2_wide.jpg" alt="Image 2 Link is Broken or Missing">
+							<div>
+								<!--<h3>Click to Enlarge</h3>-->
+								<p>Drew Brees</p>
+							</div>
+						</div>
+					</div>
+<!--End Photo Container-->	
+<!-- Photo-Container 1 -->
+					<div>
+						<div>
+							<img  class= "img-1st-set" src = "./images/thumb/download3_wide.jpg" alt="Image 3 Link is Broken or Missing">
+							<div>
+								<!--<h3>Click to Enlarge</h3-->>
+								<p>Laurence Maroney</p>
+							</div>
+						</div>
+					</div>
+<!--End Photo Container-->	
+		</div>		
+	</div>
+
+</section>
+<br>
+<br>
+
+<!-- THIS IS AN ATTEMPT AT THE NEW SECTION FOR LIGHTBOX-->
+<section>
+<h2 style="text-align:center">NFL Famous Players</h2>
+<div class="pad-row-images">
+<div class="row">
+  <div class="column">
+    <img src=".\images\thumb\download1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src=".\images\thumb\download2.jpg"" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src=".\images\thumb\download3.jpg"" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+</div>
+</div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src=".\images\thumb\download1_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src=".\images\thumb\download2_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src=".\images\thumb\download3_wide.jpg" style="width:100%">
+    </div>
+    
+        
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src=".\images\thumb\download1_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Patrick Mahomes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src=".\images\thumb\download2_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Drew Brees">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src=".\images\thumb\download3_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Laurence Maroney">
+    </div>
+    
+  </div>
+</div>
+</section>
+<!--END Lightbox Effect-->
+
+
+
+
+
+
+
+
+
+
+
+	<!--Pictures Page Section END-->
+<!--Video Page Section Start-->
+<div class="videos-container">
+	<p id="videos">Famous Classic NY Giants (When they were actually good)</p>
+	<iframe src="https://www.youtube.com/embed/EOUGunxiq3k?si=pCmOWpJBc3eALeIQ" width="420"; height="345";>
+	</iframe>
+</div>
+	
+	
+<!--Video Page Section END-->
+	
+	
+	<!--Contact Page Section Start-->
+	
+
+<section>
+	<div id="lottery">
+		<div>
+		<h1>Reservations</h1>
+			<div>
+			<h2><span>Ticket Lottery Raffle</span>
+				<br />Reserve Your free tickets today for the upcoming fundraiser and raffle event!
+			</h2>
+				<p>
+					Please provide us with your basic contact information
+				</p>
+
+						<div>
+								<form class= "lottery-submission" action="" method="post">
+									
+									<div class="raffle-input-form">
+										<label for="firstname">First name</label>
+										<input class="contactInfo" type ="text"value="First Name">
+									</div>
+
+
+									<div class="raffle-input-form">
+										<label for="lastname">Last Name</label>
+										<input class="contactInfo" type ="text"value="Last Name">
+									</div>
+									
+									<div class="raffle-input-form">
+										<label for="streetaddress">Street Address</label>
+										<input class="contactInfo" type ="text" value="Street Address">
+									</div>
+
+
+									<div class="raffle-input-form">
+										<label for="addl address"></label>Additional Address</label>
+										<input class="contactInfo" type ="text"value="P.O. BOX--Apt. #">
+									</div>
+
+									<div class="raffle-input-form">
+										<label for="town">Town</label>
+										<input class="contactInfo" type ="text"value= "Town/City">
+									</div>
+
+
+
+									<div class="raffle-input-form">
+										<label for="town">State</label>
+										<input class="contactInfo" type ="text"value= "State">
+									</div>
+
+									<div class="raffle-input-form">
+										<label for="ZIP">ZIP Code</label>
+										<input class="contactInfo" type ="text" value="Zip Code">
+									</div>	
+									
+									<div class="raffle-input-form">
+										<label for="attempts"># of Tickets Attempted</label>
+										<input class="contactInfo" type ="text" value="Number of Tickets Requested">
+									</div>
+									
+									<div class="raffle-input-form">
+											<label for="email">Email Address</label>
+											<input class="contactInfo" type ="text" value="Email Address">
+									</div>	
+								
+									
+									<div class="raffle-input-form">
+										<label for="phonenumber">Phone Number</label>
+										<input class="contactInfo" type ="text" value="Phone Number">
+									</div>
+									
+								
+								<div class="form-spacer">
+										<label class="terms" id="terms_conditions">Terms and Conditions</label>
+								</div>
+									<br>
+									<br>
+									<div>
+										<input type = "submit" Value="Submit">
+									</div>
+								</form>
+						</div>
+			</div>
+		
+		</div>
+	</div>
+</section>
+	<!--Contact Page Section END-->
+	
+	
+	
+	<!--Footer-->
+<footer>
+<br>
+	<div>
+		www.The NFL Advocate.com &nbsp;|&nbsp; &copy; 2023
+	</div>
+</footer>
+	<!--End Footer-->
+	
+	
+	
+	</body>
+</html>
