@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!---Reference jQuery Library through API-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>    
+
+<body>
+<script>
+  //Use api.jquery.com  for documentation reference
+  // $ is equiv to Jquery
+//When the DOM is loaded, run the function that is defined within the curly braces
+$("document").ready(function() {
+   // Write HTML i.e. equiv to document.write in plain-vanilla JS
+    $("html").append(
+        //use backslashes to represent the next line
+        //start with the body element add a container and three paragraphs that will be rendered with css. Header wil be hidden if element id 3 is clicked
+        "<body>\
+            <div id='container'>\
+                    <div id = 'inner'>\
+                        <h1>Basic jQuery</h1>\
+                        <p id ='1'>Paragraph 1</p>\
+                        <p id ='2'>Paragraph 2</p>\
+                        <p id ='3'>Paragraph 3</p>\
+                        </div>\
+                        <\div>\
+        </body>");
+        //sets the font of paragrah 2, defined as id 2 to red
+        $("#2").css({"color":"red"});
+        //when paragraph 3 is clicked, hide the Header that contains Basic JQuery
+        $("#3").click(function() {
+            $('h1').hide();
+        })
+    
+    });
+       
+</script>
+</body>
+
+</html>
